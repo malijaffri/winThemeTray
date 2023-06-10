@@ -10,6 +10,6 @@ Windows 10 system tray app to toggle the system color theme (light/dark).
 
 ## Licence
 
-GNU GPL v3
+© 2023 malijaffri. All Rights Reserved.
 
-Originally written by malijaffri.
+Distributed under the GNU GPL v3 licence
