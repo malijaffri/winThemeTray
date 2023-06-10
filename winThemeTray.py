@@ -80,7 +80,7 @@ def init():
         MenuItem("Dark Mode", mode_dark),
         MenuItem("Quit", quit_app),
     )
-    icon = Icon("Win Theme Toggler", image, "Win Theme Toggler", menu)
+    icon: Icon = Icon("Windows Theme Switcher", image, "Windows Theme Switcher", menu)
     icon.run()
 
 
