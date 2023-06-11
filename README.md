@@ -1,6 +1,6 @@
-# Windows Theme Switcher
+# Windows Theme Switcher Tray
 
-Windows 10 system tray app to toggle the system color theme (light/dark).
+Windows 10 system tray app to toggle the system color theme (light/dark). Standalone tray vesion of [Windows Theme Switcher](https://github.com/malijaffri/winThemeSwitcher)
 
 ## Usage
 

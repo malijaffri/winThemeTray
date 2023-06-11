@@ -1,7 +1,6 @@
 # Import the required libraries
-import platform
-import sys
-from subprocess import run, DEVNULL
+import platform, sys
+from subprocess import run, DETACHED_PROCESS
 from pathlib import Path
 from darkdetect import isLight
 from PIL import Image
@@ -48,7 +47,7 @@ def mode_set(mode: int | str):
             f"Parameter 'mode' must be either 0 or 1! Provided value: {mode}"
         )
     for themeType in themeTypes:
-        run(eval(command), stdout=DEVNULL, stderr=DEVNULL)
+        run(eval(command), creationflags=DETACHED_PROCESS)
 
 
 # Set Dark theme
@@ -80,7 +79,7 @@ def init():
         MenuItem("Dark Mode", mode_dark),
         MenuItem("Quit", quit_app),
     )
-    icon: Icon = Icon("Windows Theme Switcher", image, "Windows Theme Switcher", menu)
+    icon: Icon = Icon("Windows Theme Switcher Tray", image, "Windows Theme Switcher Tray", menu)
     icon.run()
 
 
